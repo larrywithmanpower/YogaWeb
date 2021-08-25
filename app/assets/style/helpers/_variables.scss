@@ -252,10 +252,25 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
+  4: $spacer * .25,
   8: $spacer * .5,
+  10: $spacer * .625,
+  14: $spacer * .875,
   16: $spacer,
+  20: $spacer * 1.25,
+  22: $spacer * 1.375,
+  24: $spacer * 1.5,
   28: $spacer * 1.75,
+  30: $spacer * 1.875,
   32: $spacer * 2,
+  40: $spacer * 2.5,
+  44: $spacer * 2.75,
+  48: $spacer * 3,
+  56: $spacer * 3.5,
+  64: $spacer * 4,
+  96: $spacer * 6,
+  106: $spacer * 6.625,
+  150: $spacer * 9.375,
   
 ) !default;
 
@@ -269,8 +284,13 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  1: 1%,
+  2: 2%,
+  5: 5%,
+  10: 10%,
   50: 50%,
-  100: 100%
+  100: 100%,
+  16: 16px
 ) !default;
 // scss-docs-end position-map
 
@@ -458,7 +478,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  36: $h6-font-size * 2.25,
+  48: $h6-font-size * 3,
 ) !default;
 // scss-docs-end font-sizes
 

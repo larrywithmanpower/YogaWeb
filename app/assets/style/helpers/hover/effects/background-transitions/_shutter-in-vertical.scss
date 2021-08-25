@@ -3,6 +3,7 @@
 	@include hacks();
 	position: relative;
 	background: $activeColor;
+	color: white;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 
@@ -14,7 +15,8 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background: $primaryColor;
+		background: $secondaryColor;
+		border-radius: 4px 4px 4px 4px;
 		@include prefixed(transform, scaleY(1));
 		@include prefixed(transform-origin, 50%);
 		@include prefixed(transition-property, transform);
@@ -25,10 +27,11 @@
 	&:hover,
 	&:focus,
 	&:active {
-		color: white;
+		color: black;
 
 		&:before {
 			@include prefixed(transform, scaleY(0));
+			border-radius: 4px 4px 4px 4px;
 		}
 	}
 }

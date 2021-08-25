@@ -1,0 +1,24 @@
+.card-img {
+  height: 243px;
+  display: block;
+  object-fit: cover;
+  object-fit: center center;
+  @media (max-width: 768px) {
+    height: 238px;
+    border-radius: 16px 0 0 16px;
+  }
+  @media (max-width: 414px) {
+    height: 243px;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+// hover
+.card {
+  &:hover.img-scale {
+    img {
+      transition: all 0.3s ease;
+      transform: scale(1.2);
+    }
+  }
+}

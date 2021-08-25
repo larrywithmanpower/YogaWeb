@@ -5,5 +5,10 @@
 @import './helpers/utils';
 @import 'bootstrap';
 
+@import '../../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
 @import './helpers/hover/hover.scss';
+@import './helpers/animation';
+@import './components/carousel';
+@import './components/card';
 @import './layout/base';
+@import './layout/index';
