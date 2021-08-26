@@ -1,5 +1,17 @@
 
 $(document).ready(function () {
+  // fixed
+  $(window).scroll(function () {
+    let scrollVal = $(this).scrollTop();
+    console.log(scrollVal);
+    if (scrollVal >= 300) {
+      $('.js-fixed').removeClass('top-50');
+      $('.js-fixed').addClass('bottom-50');
+    } else {
+      $('.js-fixed').addClass('top-50');
+      $('.js-fixed').removeClass('bottom-50');
+    }
+});
   // corousel
   // owl
   $('.owl-carousel').owlCarousel({
@@ -19,7 +31,7 @@ $(document).ready(function () {
     }
   });
   // swiper
-  
+
   // mobile user recommand forward, back control
   $('.js-forward').on('click', function (e) {
     e.preventDefault();
