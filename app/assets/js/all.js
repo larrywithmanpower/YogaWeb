@@ -1,9 +1,7 @@
 
-$(function () {
-  console.log('Hello Bootstrap5');
-});
-
 $(document).ready(function () {
+  // corousel
+  // owl
   $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -20,7 +18,21 @@ $(document).ready(function () {
       }
     }
   });
-
-
-  $('.js-scrollLeft').scrollLeft(1500);
+  // swiper
+  
+  // mobile user recommand forward, back control
+  $('.js-forward').on('click', function (e) {
+    e.preventDefault();
+    $('.js-userTop').addClass('d-none');
+    $('.js-userBottom').removeClass('d-none');
+    $(this).addClass('disabled');
+    $('.js-back').removeClass('disabled');
+  });
+  $('.js-back').on('click', function (e) {
+    e.preventDefault();
+    $('.js-userBottom').addClass('d-none');
+    $('.js-userTop').removeClass('d-none');
+    $(this).addClass('disabled');
+    $('.js-forward').removeClass('disabled');
+  });
 });
