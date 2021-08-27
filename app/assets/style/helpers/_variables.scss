@@ -251,7 +251,9 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  -10: -10px,
   0: 0,
+  2: $spacer * .125,
   4: $spacer * .25,
   8: $spacer * .5,
   10: $spacer * .625,
@@ -259,9 +261,12 @@ $spacers: (
   13: $spacer * .8125,
   14: $spacer * .875,
   16: $spacer,
+  18: $spacer * 1.125,
   20: $spacer * 1.25,
+  21: $spacer * 1.3125,
   22: $spacer * 1.375,
   24: $spacer * 1.5,
+  25: $spacer * 1.5625,
   28: $spacer * 1.75,
   30: $spacer * 1.875,
   32: $spacer * 2,
@@ -269,14 +274,18 @@ $spacers: (
   36: $spacer * 2.25,
   40: $spacer * 2.5,
   44: $spacer * 2.75,
+  46: $spacer * 2.875,
   48: $spacer * 3,
+  54: $spacer * 3.375,
   56: $spacer * 3.5,
   64: $spacer * 4,
+  72: $spacer * 4.5,
   80: $spacer * 5,
   88: $spacer * 5.5,
   96: $spacer * 6,
   104: $spacer * 6.5,
   106: $spacer * 6.625,
+  113: $spacer * 7.0625,
   150: $spacer * 9.375,
   
 ) !default;
@@ -290,6 +299,8 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 
 // scss-docs-start position-map
 $position-values: (
+  -10: -10px,
+  -13: -13px,
   0: 0,
   1: 1%,
   2: 2%,
@@ -300,6 +311,7 @@ $position-values: (
   20: 20%,
   40: 40%,
   50: 50%,
+  55: 55%,
   100: 100%,
 ) !default;
 // scss-docs-end position-map
@@ -536,7 +548,7 @@ $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y:                 $spacer !default;
 $hr-color:                    inherit !default;
-$hr-height:                   $border-width !default;
+$hr-height:                   $border-width * 2 !default;
 $hr-opacity:                  .25 !default;
 
 $legend-margin-bottom:        .5rem !default;
@@ -1291,9 +1303,9 @@ $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-sm:                          300px !default;
-$modal-md:                          500px !default;
-$modal-lg:                          800px !default;
+$modal-sm:                          345px !default;
+$modal-md:                          690px !default;
+$modal-lg:                          920px !default;
 $modal-xl:                          1140px !default;
 
 $modal-fade-transform:              translate(0, -50px) !default;

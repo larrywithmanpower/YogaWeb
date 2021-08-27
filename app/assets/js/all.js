@@ -1,5 +1,12 @@
 
 $(document).ready(function () {
+  // layout navbar active
+  $('.js-linkPage > li > a').each(function () {
+    if ($(this)[0].href === String(window.location)) {
+      $(this).removeClass("active");
+      $(this).addClass("active");
+    }
+  })
   // fixed
   $(window).scroll(function () {
     let scrollVal = $(this).scrollTop();
@@ -11,7 +18,7 @@ $(document).ready(function () {
       $('.js-fixed').addClass('top-50');
       $('.js-fixed').removeClass('bottom-50');
     }
-});
+  });
   // corousel
   // owl
   $('.owl-carousel').owlCarousel({
@@ -30,7 +37,6 @@ $(document).ready(function () {
       }
     }
   });
-  // swiper
 
   // mobile user recommand forward, back control
   $('.js-forward').on('click', function (e) {
@@ -47,4 +53,29 @@ $(document).ready(function () {
     $(this).addClass('disabled');
     $('.js-forward').removeClass('disabled');
   });
+});
+
+// swiper
+// course
+let swiper = new Swiper(".js-courseSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      direction: 'vertical',
+      spaceBetween: 74,
+    },
+    415: {
+      slidesPerView: 2,
+
+    },
+    769: {
+      slidesPerView: 3,
+
+    }
+  },
+  pagination: false,
 });

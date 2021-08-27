@@ -59,6 +59,10 @@
   z-index: 100;
 }
 
+.stretch {
+  align-items: stretch;
+}
+
 // utilities
 $utilities: (
   'line-height': (
@@ -70,6 +74,7 @@ $utilities: (
       sm: $line-height-sm,
       base: $line-height-base,
       lg: $line-height-lg,
+      21: 21px,
       24: 24px,
       30: 30px,
       36: 36px,
@@ -89,6 +94,7 @@ $utilities: (
       4: $h4-font-size,
       5: $h5-font-size,
       6: $h6-font-size,
+      14: $h6-font-size * .875,
       36: $h6-font-size * 2.25,
       48: $h6-font-size * 3,
     ),
@@ -99,10 +105,13 @@ $utilities: (
     class: w,
     values: (
       10: 10%,
+      11: 11%,
       20: 20%,
       30: 30%,
+      35: 35%,
       40: 40%,
       50: 50%,
+      55: 55%,
       60: 60%,
       70: 70%,
       80: 80%,
@@ -144,6 +153,11 @@ $utilities: (
       55: 55vh,
       60: 60vh,
       70: 70vh,
+      71: 71vh,
+      72: 72vh,
+      73: 73vh,
+      74: 74vh,
+      75: 75vh,
       80: 80vh,
       90: 90vh,
       100: 100vh,
@@ -158,6 +172,7 @@ $utilities: (
       1: $border-radius-sm,
       2: $border-radius,
       3: $border-radius-lg,
+      4: 4px,
       16: 1rem,
       circle: 50%,
       pill: $border-radius-pill,
