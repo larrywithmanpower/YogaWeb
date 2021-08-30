@@ -1,3 +1,5 @@
+
+// img px
 .card-img {
   height: 243px;
   display: block;
@@ -5,11 +7,23 @@
   object-fit: center center;
   @media (max-width: 768px) {
     height: 238px;
-    border-radius: 16px 0 0 16px;
+    border-radius: 16px 0 0 16px; 
   }
   @media (max-width: 414px) {
     height: 243px;
     border-radius: 16px 16px 0 0;
+  }
+}
+
+.surrounding-img {
+  height: 350px;
+  display: block;
+  object-fit: cover;
+  @media (max-width: 768px) {
+    height: 210px;
+  }
+  @media (max-width: 414px) {
+    height: 350px;
   }
 }
 
@@ -21,4 +35,9 @@
       transform: scale(1.2);
     }
   }
+}
+
+.js-chooseCard {
+  box-shadow: 0 3px 6px #00000029;
+
 }

@@ -10,7 +10,7 @@
 	overflow: hidden;
 	@include prefixed(transition-duration, $slowDuration);
 	@include prefixed(transition-property, "color, background-color");
-	color: $secondary;
+	color: #907A7B;
 
 	&:hover,
 	&:focus,
