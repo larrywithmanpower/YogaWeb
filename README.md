@@ -1,10 +1,10 @@
 # 使用工具
 
-- Bootstrap並熟悉Utility api用法
-- 控制Bootstrap變數，減少css撰寫
-- 搭配jQuery來操控DOM
-- 使用swiper及owl輪播
-- 使用hover.css
+- Bootstrap 並熟悉 API 用法
+- 控制 Bootstrap 變數，減少 css 撰寫
+- 搭配 jQuery 來操控 DOM
+- 使用 swiper 及 owl 輪播
+- 使用 hover.css
 
 ## 指令列表
 
